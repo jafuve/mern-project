@@ -2,9 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const { 
-    getUsers,
-    attemptLogin,
-    createUser
+    getUsers
 } = require('../controllers/authController');
 
 router.route('/users').get(getUsers);
